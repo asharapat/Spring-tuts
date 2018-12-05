@@ -1,0 +1,210 @@
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="public" name="security" />
+<meta content="index,follow" name="Robots" />
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta content="reference" name="DC.Type" />
+<meta name="DC.Title" content="SYSALIASES system table" />
+<meta name="abstract" content="The SYSALIASES table describes the procedures, functions, and user-defined types in the database." />
+<meta name="description" content="The SYSALIASES table describes the procedures, functions, and user-defined types in the database." />
+<meta content="system tables, SYSALIASES, aliases, SYSALIASES system table" name="DC.subject" />
+<meta content="system tables, SYSALIASES, aliases, SYSALIASES system table" name="keywords" />
+<meta scheme="URI" name="DC.Relation" content="rrefsistabs38369.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="rrefsistabs28114" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="commonltr.css" type="text/css" rel="stylesheet" />
+<title>SYSALIASES system table</title>
+</head>
+<body id="rrefsistabs28114"><a name="rrefsistabs28114"><!-- --></a>
+
+
+<h1 class="topictitle1">SYSALIASES system table</h1>
+
+
+
+<div><p>The SYSALIASES table describes the procedures, functions, and
+user-defined types in the database.</p>
+
+<div class="section">
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" width="100%" frame="border" border="1" rules="all">
+
+<thead align="left">
+<tr>
+<th align="left" valign="bottom" width="18%" id="N1008A">Column Name</th>
+
+<th align="left" valign="bottom" width="28.999999999999996%" id="N10093">Type</th>
+
+<th align="left" valign="bottom" width="10%" id="N1009C">Length</th>
+
+<th align="left" valign="bottom" width="14.000000000000002%" id="N100A5">Nullability</th>
+
+<th align="left" valign="bottom" width="28.999999999999996%" id="N100AE">Contents</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td valign="top" width="18%" headers="N1008A ">ALIASID</td>
+
+<td valign="top" width="28.999999999999996%" headers="N10093 ">CHAR</td>
+
+<td valign="top" width="10%" headers="N1009C ">36</td>
+
+<td valign="top" width="14.000000000000002%" headers="N100A5 ">false</td>
+
+<td valign="top" width="28.999999999999996%" headers="N100AE ">Unique identifier for the alias</td>
+
+</tr>
+
+<tr>
+<td valign="top" width="18%" headers="N1008A ">ALIAS</td>
+
+<td valign="top" width="28.999999999999996%" headers="N10093 ">VARCHAR</td>
+
+<td valign="top" width="10%" headers="N1009C ">128</td>
+
+<td valign="top" width="14.000000000000002%" headers="N100A5 ">false</td>
+
+<td valign="top" width="28.999999999999996%" headers="N100AE ">Alias (in the case of a user-defined type, the name of the
+user-defined type)</td>
+
+</tr>
+
+<tr>
+<td valign="top" width="18%" headers="N1008A ">SCHEMAID</td>
+
+<td valign="top" width="28.999999999999996%" headers="N10093 ">CHAR</td>
+
+<td valign="top" width="10%" headers="N1009C ">36</td>
+
+<td valign="top" width="14.000000000000002%" headers="N100A5 ">true</td>
+
+<td valign="top" width="28.999999999999996%" headers="N100AE ">Reserved for future use</td>
+
+</tr>
+
+<tr>
+<td valign="top" width="18%" headers="N1008A ">JAVACLASSNAME</td>
+
+<td valign="top" width="28.999999999999996%" headers="N10093 ">LONG VARCHAR</td>
+
+<td valign="top" width="10%" headers="N1009C ">32,700</td>
+
+<td valign="top" width="14.000000000000002%" headers="N100A5 ">false</td>
+
+<td valign="top" width="28.999999999999996%" headers="N100AE ">The Java class name</td>
+
+</tr>
+
+<tr>
+<td valign="top" width="18%" headers="N1008A ">ALIASTYPE</td>
+
+<td valign="top" width="28.999999999999996%" headers="N10093 ">CHAR</td>
+
+<td valign="top" width="10%" headers="N1009C ">1</td>
+
+<td valign="top" width="14.000000000000002%" headers="N100A5 ">false</td>
+
+<td valign="top" width="28.999999999999996%" headers="N100AE "><em>'F'</em> (function), <em>'P'</em> (procedure),
+<em>'A'</em> (user-defined type)</td>
+
+</tr>
+
+<tr>
+<td valign="top" width="18%" headers="N1008A ">NAMESPACE</td>
+
+<td valign="top" width="28.999999999999996%" headers="N10093 ">CHAR</td>
+
+<td valign="top" width="10%" headers="N1009C ">1</td>
+
+<td valign="top" width="14.000000000000002%" headers="N100A5 ">false</td>
+
+<td valign="top" width="28.999999999999996%" headers="N100AE "><em>'F'</em> (function), <em>'P'</em> (procedure),
+<em>'A'</em> (user-defined type)</td>
+
+</tr>
+
+<tr>
+<td valign="top" width="18%" headers="N1008A ">SYSTEMALIAS</td>
+
+<td valign="top" width="28.999999999999996%" headers="N10093 ">BOOLEAN</td>
+
+<td valign="top" width="10%" headers="N1009C ">1</td>
+
+<td valign="top" width="14.000000000000002%" headers="N100A5 ">false</td>
+
+<td valign="top" width="28.999999999999996%" headers="N100AE "><em>true</em> (system supplied or built-in alias)   <p><em>false</em> (alias
+created by a user)</p>
+</td>
+
+</tr>
+
+<tr>
+<td valign="top" width="18%" headers="N1008A ">ALIASINFO</td>
+
+<td valign="top" width="28.999999999999996%" headers="N10093 "><em>org.apache.derby.
+catalog.AliasInfo</em> <p>This class is not part of the public API.</p>
+</td>
+
+<td valign="top" width="10%" headers="N1009C ">2,147,483,647</td>
+
+<td valign="top" width="14.000000000000002%" headers="N100A5 ">true</td>
+
+<td valign="top" width="28.999999999999996%" headers="N100AE ">A Java interface that encapsulates the additional information
+that is specific to an alias</td>
+
+</tr>
+
+<tr>
+<td valign="top" width="18%" headers="N1008A ">SPECIFICNAME</td>
+
+<td valign="top" width="28.999999999999996%" headers="N10093 ">VARCHAR</td>
+
+<td valign="top" width="10%" headers="N1009C ">128</td>
+
+<td valign="top" width="14.000000000000002%" headers="N100A5 ">false</td>
+
+<td valign="top" width="28.999999999999996%" headers="N100AE ">System-generated identifier</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+
+</div>
+
+<div>
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="rrefsistabs38369.html" title="">Derby system tables</a></div>
+</div>
+</div>
+
+</body>
+</html>

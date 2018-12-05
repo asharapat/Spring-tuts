@@ -1,0 +1,6 @@
+These are snapshots at the end of each of our recording sessions.
+
+Note that the recording sessions are broken into multiple sessions in post production, so there is only a workspace for every few chapters on the course. Most of the code on the videos will be in one of the workspaces.
+
+Please contact us at contact@virtualpairprogrammers.com if you have any problems.
+

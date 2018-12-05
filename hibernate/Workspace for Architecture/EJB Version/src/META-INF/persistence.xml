@@ -1,0 +1,19 @@
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+	
+   <persistence-unit name="tutorSystem" transaction-type="JTA">
+   
+   	  <jta-data-source>jdbc/TutorDb</jta-data-source>
+   
+      <mapping-file>META-INF/queries.xml</mapping-file>
+   
+   	  <!--  on the course, we deploy to Glassfish which uses EclipseLink as its default
+   	        JPA provider -->
+      <properties>		
+      
+            <property name="eclipselink.logging.level" value="FINE" /> 
+            
+      </properties>
+   </persistence-unit>
+</persistence>

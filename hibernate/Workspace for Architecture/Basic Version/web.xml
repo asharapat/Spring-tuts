@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+         
+
+	<servlet>
+		<servlet-name>DisplayAllTutorsServlet</servlet-name>
+		<servlet-class>com.virtualpairprogrammers.servlets.DisplayAllTutorsServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>DisplayAllTutorsServlet</servlet-name>
+		<url-pattern>/displayAllTutors.html</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddNewTutorServlet</servlet-name>
+		<servlet-class>com.virtualpairprogrammers.servlets.AddNewTutorServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AddNewTutorServlet</servlet-name>
+		<url-pattern>/addNewTutor.html</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DisplayStudentsForTutorServlet</servlet-name>
+		<servlet-class>com.virtualpairprogrammers.servlets.DisplayStudentsForTutorServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>DisplayStudentsForTutorServlet</servlet-name>
+		<url-pattern>/displayTutorDetail.html</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
